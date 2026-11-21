@@ -1,0 +1,32 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "safedeal",
+  "title": "SafeDeal",
+  "description": "Buy safely. Sell confidently. An AI transaction-security agent for peer-to-peer deals.",
+  "icon": "icon.png",
+  "author": "elahmai",
+  "categories": ["Finance", "Productivity"],
+  "license": "MIT",
+  "commands": [
+    { "name": "create-safedeal", "title": "Create SafeDeal Transaction", "subtitle": "SafeDeal", "description": "Create a secure deal from a natural-language description.", "mode": "view" },
+    { "name": "verify-payment", "title": "Verify Payment", "subtitle": "SafeDeal", "description": "Verify a payment against trusted provider records.", "mode": "view" },
+    { "name": "my-safedeals", "title": "My SafeDeals", "subtitle": "SafeDeal", "description": "View and manage your transactions.", "mode": "view" },
+    { "name": "track-deal", "title": "Track Deal", "subtitle": "SafeDeal", "description": "Track agreement, payment and delivery progress.", "mode": "view" },
+    { "name": "report-dispute", "title": "Report a Dispute", "subtitle": "SafeDeal", "description": "Open a dispute and pause the transaction.", "mode": "view" },
+    { "name": "security-check", "title": "Security Check", "subtitle": "SafeDeal", "description": "Analyze a transaction for risk.", "mode": "view" },
+    { "name": "transaction-summary", "title": "Transaction Summary", "subtitle": "SafeDeal", "description": "Generate a readable transaction report.", "mode": "view" }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.88.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "typescript": "^5.6.0"
+  },
+  "scripts": {
+    "dev": "ray develop",
+    "build": "ray build -e dist",
+    "lint": "ray lint"
+  }
+}
